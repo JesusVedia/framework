@@ -23,3 +23,9 @@ $whoops->register();
 
 $request = new \Http\HttpRequest($_GET, $_POST, $_COOKIE, $_FILES, $_SERVER);
 $response = new \Http\HttpResponse;
+
+foreach ($response->getHeaders() as $header) {
+    header($header, false);
+}
+
+echo $response->getContent();
