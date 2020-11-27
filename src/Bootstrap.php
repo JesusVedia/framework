@@ -21,4 +21,5 @@ if ($environment !== 'production') {
 }
 $whoops->register();
 
-throw new \Exception;
+$request = new \Http\HttpRequest($_GET, $_POST, $_COOKIE, $_FILES, $_SERVER);
+$response = new \Http\HttpResponse;
