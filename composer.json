@@ -1,0 +1,21 @@
+{
+    "name": "Jesus Vedia",
+    "description": "My web site",
+    "keywords": ["Your keyword", "Another keyword"],
+    "license": "JAV",
+    "authors": [
+        {
+            "name": "Jesus A Vedia",
+            "email": "seedayanimation@gmail.com",
+            "role": "Creator / Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JesusVedias\\": "src/"
+        }
+    }
+}
